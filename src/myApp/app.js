@@ -21,7 +21,7 @@ app.get('/form-with-post',function(request, response){
 });
 
 app.get('/submit-form-with-get', function(request, response){
-	return response.send(request.query); // ?first=Abc&Last=xyz
+	return response.send(request.query.source_code); // ?first=Abc&Last=xyz
 })
 
 app.listen(3000, function(){
